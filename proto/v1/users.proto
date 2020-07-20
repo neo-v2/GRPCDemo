@@ -1,0 +1,23 @@
+syntax = "proto3";
+package v1;
+option go_package = "GRPCDemo/pkg/api/v1";
+
+message User{
+    string firstname = 1;
+    string lastname =  2;
+    string email = 3;
+}
+message userRequest{
+    User user = 1;
+}
+
+message userResponse{
+
+    string msg = 1;
+    string token = 2;
+}
+
+service userService{
+
+    rpc registeruser(userRequest) returns(userResponse);
+}
