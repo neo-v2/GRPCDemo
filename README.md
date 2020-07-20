@@ -6,7 +6,7 @@ From terminal - go run GRPCDemo
 
 ### To Run GRPC Client
 cd GRPCDemo/pkg/protocol/grpc/client
-go buid .
+go buid .  
 ./client --server=localhost:8080 --FirstName=TestUser1 --LastName=TestUser2 --email=a@me.com
 
 ### Response
